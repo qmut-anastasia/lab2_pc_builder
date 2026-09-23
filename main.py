@@ -1,6 +1,7 @@
 # Точка входа в систему подбора комплектующих для ПК
 from modules.catalog import load_catalog
 from modules.builder import build_pc_by_budget
+from modules.compatibility import check_cpu_motherboard
 
 def main():
     cpu_list = load_catalog("data/cpu.json")
